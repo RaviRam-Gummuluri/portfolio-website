@@ -1,0 +1,99 @@
+/* Add styles for the website */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #ff00cc, #3333ff);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .welcome-section {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .loading-text {
+    font-size: 24px;
+    margin-top: 20px;
+    animation: fade-in 2s ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .oval-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+  }
+  
+  .oval {
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .oval img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
